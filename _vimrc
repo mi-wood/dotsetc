@@ -416,5 +416,7 @@ set number
 " set to copy to clipboard by default (doesn't work on preloaded osx vim)
 set clipboard=unnamed
 
-" map to delete without cut
-noremap <leader>d "_d
+" map to leader d to delete without cut 
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+vnoremap <leader>p "_dP
