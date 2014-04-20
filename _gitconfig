@@ -1,3 +1,11 @@
 [alias]
   smash = !git add -A && git commit
   ram = !git checkout -b
+  pl  = log --pretty=format:"%C(cyan)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  la = "!git config -l | grep alias | cut -c 7-"
+  co = checkout
+  ci = commit
+  cl = clone
+  br = branch
+  rh = reset --hard
+
