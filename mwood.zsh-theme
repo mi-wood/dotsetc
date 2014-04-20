@@ -1,13 +1,8 @@
 # vim:ft=zsh ts=2 sw=2 sts=2
 
 rvm_current() {
-  if [[ `rvm current` == "system" ]] then
-    rvm current 2>/dev/null
-  else
-    rvm current | awk -F '-' '{$1=""; print $0}' 2>/dev/null
-  fi
+  rvm current |   cut -d-  -f2- 2>/dev/null
 }
-
 rbenv_version() {
   rbenv version 2>/dev/null | awk '{print $1}'
 }
