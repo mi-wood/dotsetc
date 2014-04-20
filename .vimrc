@@ -412,3 +412,9 @@ endfunction
 
 " set line numbers on
 set number
+
+" set to copy to clipboard by default (doesn't work on preloaded osx vim)
+set clipboard=unnamed
+
+" map to delete without cut
+noremap <leader>d "_d
