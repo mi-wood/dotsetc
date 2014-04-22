@@ -86,4 +86,4 @@ alias bex='bundle exec'
 setopt hist_ignore_all_dups hist_ignore_space
 
 # use binstubs for cd into dir with gemfile
-export RUBYGEMS_GEMDEPS=-
+#export RUBYGEMS_GEMDEPS=-
