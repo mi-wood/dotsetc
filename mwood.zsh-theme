@@ -17,4 +17,4 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-RPROMPT='%{$FG[135]%}$(rvm_current)%{$reset_color%}'
+RPROMPT='%{$FG[135]%}$(rbenv_version)%{$reset_color%}'

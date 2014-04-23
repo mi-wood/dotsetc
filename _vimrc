@@ -64,6 +64,7 @@ Plugin 'scrooloose/syntastic'
 " Autoclose brackets
 Plugin 'spf13/vim-autoclose'
 
+Plugin 'vim-ruby/vim-ruby'
 " The following are examples of different formats supported.
 " Keep Plugin commands between here and filetype plugin indent on.
 " scripts on GitHub repos
@@ -479,3 +480,9 @@ vnoremap <leader>p "_dP
 
 " set 256 color
 let &t_Co=256
+
+" Add syntax highlighting
+set nocompatible
+syntax on
+filetype on
+

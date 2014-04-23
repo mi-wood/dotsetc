@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/usr/local/Cellar/vim/7.4.253/bin:/usr/local/Cellar/vim/7.4.253/bin:/usr/local/Cellar/vim/7.4.253/bin:/Users/michaelwood/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/MacGPG2/bin"
-export PATH="/Users/michaelwood/.rvm/bin"$PATH
+export PATH="/Users/michaelwood/.rbenv/shims/"$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
