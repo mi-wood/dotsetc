@@ -46,7 +46,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 " alternatively, pass a path where Vundle should install plugins
 "let path = '~/some/path/here'
@@ -59,7 +59,7 @@ Plugin 'gmarik/vundle'
 Plugin 'Valloric/YouCompleteMe'
 
 " Syntax checker
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 
 " Autoclose brackets
 Plugin 'spf13/vim-autoclose'
@@ -482,7 +482,7 @@ vnoremap <leader>p "_dP
 let &t_Co=256
 
 " Add syntax highlighting
-set nocompatible
-syntax on
-filetype on
+"set nocompatible
+"syntax on
+"filetype on
 
