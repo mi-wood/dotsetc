@@ -49,52 +49,27 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting berkshelf)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/Cellar/vim/7.4.253/bin:/usr/local/Cellar/vim/7.4.253/bin:/usr/local/Cellar/vim/7.4.253/bin:/Users/michaelwood/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/MacGPG2/bin"
-export PATH="/Users/michaelwood/.rbenv/shims/"$PATH
+export PATH="/usr/local/opt/gnu-sed/bin:/usr/local/Cellar/vim/7.4.253/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$HOME/.rbenv/shims:"$PATH
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 export EDITOR='vim'
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # usable postgres aliases
 alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg_stop='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop'
-alias bex='bundle exec'
 
 # ignore duplicate history
 setopt hist_ignore_all_dups hist_ignore_space
 
-# use binstubs for cd into dir with gemfile
-#export RUBYGEMS_GEMDEPS=-
-
-
 # zsh mv 
 autoload -U zmv
 
-# chef stuff
-export COOKBOOK_PATH=/Users/michaelwood/code/opstimizely-culinaryinstitute/cookbooks
-export COOKBOOK_ENVIRONMENT=local
+# Chef
+export COOKBOOK_PATH=~/code/kitchen/cookbooks
 
-# alias for hub
-eval "$(hub alias -s)"
