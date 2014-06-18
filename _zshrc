@@ -55,7 +55,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/opt/gnu-sed/bin:/usr/local/Cellar/vim/7.4.253/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/opt/gnu-sed/bin:/usr/local/Cellar/vim/7.4.253/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/opt/ec2-ami-tools-1.5.3/bin:$HOME/opt/"
 export PATH="$HOME/.rbenv/shims:"$PATH
 
 export EDITOR='vim'
@@ -72,4 +72,12 @@ autoload -U zmv
 
 # Chef
 export COOKBOOK_PATH=~/code/kitchen/cookbooks
+
+# set aws creds
+if [[ -a "$HOME/opt/env" ]]
+then
+  source ~/opt/aws-cred.sh `cat ~/opt/env`
+else
+  source ~/opt/aws-cred.sh "default"
+fi
 

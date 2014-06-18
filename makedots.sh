@@ -5,3 +5,4 @@ cp ~/.vim/colors/mwood.vim mwood.vim
 cp ~/.inputrc _inputrc
 cp ~/.oh-my-zsh/themes/mwood.zsh-theme mwood.zsh-theme
 sed -n -e '/#COPY/,$p' ~/.gitconfig  > _gitconfig
+cp ~/opt/aws-cred.sh aws-cred.sh
