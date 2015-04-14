@@ -54,17 +54,25 @@ call vundle#rc()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
-
+Plugin 'nvie/vim-flake8'
 " Autocomplete, needs to be compiled
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 " Syntax checker
 "Plugin 'scrooloose/syntastic'
 
 " Autoclose brackets
-Plugin 'spf13/vim-autoclose'
+"Plugin 'spf13/vim-autoclose'
 
 Plugin 'vim-ruby/vim-ruby'
+
+Plugin 'ngmy/vim-rubocop'
+let g:vimrubocop_keymap = 0
+nmap <C-8> :RuboCop<CR>
+
+Plugin 'kchmck/vim-coffee-script'
+
+"Plugin 'tpope/vim-surround'
 " The following are examples of different formats supported.
 " Keep Plugin commands between here and filetype plugin indent on.
 " scripts on GitHub repos
@@ -486,3 +494,5 @@ let &t_Co=256
 "syntax on
 "filetype on
 
+" enable past mode
+" set paste

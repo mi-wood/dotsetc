@@ -10,3 +10,5 @@
   br = branch
   rh = reset --hard
 
+[color]
+	ui = true
