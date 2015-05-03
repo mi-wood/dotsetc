@@ -51,7 +51,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-syntax-highlighting berkshelf)
+plugins=(git rake-fast zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,6 +98,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export PATH=$JAVA_HOME/bin:$PATH
 
 alias rake='noglob rake'
+alias find='noglob find'
 
 function change_opt_path() {
   REPO_PATH=/Users/michaelwood/code/optimizely
@@ -108,3 +109,4 @@ function change_opt_path() {
   fi
 }
 chpwd_functions=(${chpwd_functions[@]} "change_opt_path")
+change_opt_path

@@ -58,6 +58,8 @@ Plugin 'nvie/vim-flake8'
 " Autocomplete, needs to be compiled
 "Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'scrooloose/nerdtree'
+
 " Syntax checker
 "Plugin 'scrooloose/syntastic'
 
@@ -67,10 +69,16 @@ Plugin 'nvie/vim-flake8'
 Plugin 'vim-ruby/vim-ruby'
 
 Plugin 'ngmy/vim-rubocop'
+let g:vimrubocop_config = '/Users/michaelwood/code/backend-chef/.rubocop.yml'
 let g:vimrubocop_keymap = 0
 nmap <C-8> :RuboCop<CR>
 
 Plugin 'kchmck/vim-coffee-script'
+
+Plugin 'kien/ctrlp.vim'
+
+Plugin 'tyru/open-browser.vim'
+Plugin 'tyru/open-browser-github.vim'
 
 "Plugin 'tpope/vim-surround'
 " The following are examples of different formats supported.
@@ -496,3 +504,22 @@ let &t_Co=256
 
 " enable past mode
 " set paste
+
+
+" Nerdtree settings
+map <C-n> :NERDTreeToggle<CR>
+
+" Splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Disable arrow navigation
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" Autoremove whitespace
+autocmd BufWritePre *.py :%s/\s\+$//e
