@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Nemo
+Comment=Nemo file manager
+Exec=/usr/bin/nemo --no-desktop
+Icon=/home/mikena/Pictures/icons/nemo.png
+Terminal=false
+Type=Application
