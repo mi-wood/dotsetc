@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=RSSOwl
+Comment=RSSOwl feed reader
+Exec=/opt/rssowl/RSSOwl
+Icon=/opt/rssowl/icon.xpm
+Terminal=false
+Type=Application
