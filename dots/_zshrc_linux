@@ -62,6 +62,7 @@ export PATH="$HOME/opt/arcanist/arcanist/bin:"$PATH
 export PATH="$HOME/google-cloud-sdk/bin/:"$PATH
 export PATH="/usr/local/Cellar/git/2.2.1/bin/:"$PATH
 export PATH="/opt/packer:"$PATH
+export PATH="/home/mikena/opt/bin/:"$PATH
 
 export EDITOR='vim'
 
@@ -90,4 +91,8 @@ alias find='noglob find'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
-alias nemo='nemo --no-desktop'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+#[[ $TERM != "screen" ]] && exec tmux

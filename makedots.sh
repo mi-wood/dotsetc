@@ -1,8 +1,9 @@
 #!/bin/bash
-cp ~/.zshrc _zshrc
-cp ~/.vimrc _vimrc
-cp ~/.vim/colors/mwood.vim mwood.vim
-cp ~/.inputrc _inputrc
-cp ~/.oh-my-zsh/themes/mwood.zsh-theme mwood.zsh-theme
-sed -n -e '/#COPY/,$p' ~/.gitconfig  > _gitconfig
-cp ~/opt/aws-cred.sh aws-cred.sh
+sed -n -e '/#COPY/,$p' ~/.gitconfig  > dots/_gitconfig
+cp ~/.inputrc dots/_inputrc
+cp ~/.tmux.conf dots/_tmux.conf
+cp ~/.vimrc dots/_vimrc
+cp ~/.zshrc dots/_zshrc_linux
+
+cp ~/.vim/colors/mwood.vim configs/mwood.vim
+cp ~/.oh-my-zsh/themes/mwood.zsh-theme configs/mwood.zsh-theme
